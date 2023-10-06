@@ -12,6 +12,7 @@ import org.springframework.transaction.support.TransactionSynchronizationAdapter
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.util.MimeTypeUtils;
 
+//<<< Clean Arch / Outbound Adaptor
 public class AbstractEvent {
 
     String eventType;
@@ -79,3 +80,4 @@ public class AbstractEvent {
         return getEventType().equals(getClass().getSimpleName());
     }
 }
+//>>> Clean Arch / Outbound Adaptor

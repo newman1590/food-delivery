@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MypageViewHandler {
 
+    //<<< DDD / CQRS
     @Autowired
     private MypageRepository mypageRepository;
 
@@ -189,4 +190,5 @@ public class MypageViewHandler {
             e.printStackTrace();
         }
     }
+    //>>> DDD / CQRS
 }

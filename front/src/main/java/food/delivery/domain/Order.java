@@ -3,6 +3,7 @@ package food.delivery.domain;
 import food.delivery.FrontApplication;
 import food.delivery.domain.OrderCancelled;
 import food.delivery.domain.OrderPlaced;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import lombok.Data;
 @Entity
 @Table(name = "Order_table")
 @Data
+//<<< DDD / Aggregate Root
 public class Order {
 
     @Id
@@ -46,3 +48,4 @@ public class Order {
         return orderRepository;
     }
 }
+//>>> DDD / Aggregate Root

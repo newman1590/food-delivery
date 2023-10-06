@@ -2,6 +2,7 @@ package food.delivery.domain;
 
 import food.delivery.FrontApplication;
 import food.delivery.domain.Paid;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import lombok.Data;
 @Entity
 @Table(name = "Payment_table")
 @Data
+//<<< DDD / Aggregate Root
 public class Payment {
 
     @Id
@@ -33,7 +35,10 @@ public class Payment {
         return paymentRepository;
     }
 
+    //<<< Clean Arch / Port Method
     public static void pay(OrderPlaced orderPlaced) {
+        //implement business logic here:
+
         /** Example 1:  new item 
         Payment payment = new Payment();
         repository().save(payment);
@@ -56,4 +61,7 @@ public class Payment {
         */
 
     }
+    //>>> Clean Arch / Port Method
+
 }
+//>>> DDD / Aggregate Root

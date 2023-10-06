@@ -1,5 +1,4 @@
 <template>
-
     <v-card outlined>
         <v-card-title>
             Pick
@@ -12,7 +11,7 @@
         <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn
-                    color="deep-purple lighten-2"
+                    color="primary"
                     text
                     @click="pick"
             >
@@ -20,7 +19,7 @@
             </v-btn>
             
             <v-btn
-                    color="deep-purple lighten-2"
+                    color="primary"
                     text
                     @click="close"
             >

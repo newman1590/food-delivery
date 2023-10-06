@@ -5,16 +5,16 @@ import Router from 'vue-router'
 Vue.use(Router);
 
 
-import OrderManager from "./components/listers/OrderCards"
-import OrderDetail from "./components/listers/OrderDetail"
-import PaymentManager from "./components/listers/PaymentCards"
-import PaymentDetail from "./components/listers/PaymentDetail"
+import FrontOrderManager from "./components/listers/FrontOrderCards"
+import FrontOrderDetail from "./components/listers/FrontOrderDetail"
+import FrontPaymentManager from "./components/listers/FrontPaymentCards"
+import FrontPaymentDetail from "./components/listers/FrontPaymentDetail"
 
-import FoodCookingManager from "./components/listers/FoodCookingCards"
-import FoodCookingDetail from "./components/listers/FoodCookingDetail"
+import StoreFoodCookingManager from "./components/listers/StoreFoodCookingCards"
+import StoreFoodCookingDetail from "./components/listers/StoreFoodCookingDetail"
 
-import DeliveryManager from "./components/listers/DeliveryCards"
-import DeliveryDetail from "./components/listers/DeliveryDetail"
+import RiderDeliveryManager from "./components/listers/RiderDeliveryCards"
+import RiderDeliveryDetail from "./components/listers/RiderDeliveryDetail"
 
 
 
@@ -23,46 +23,46 @@ export default new Router({
     base: process.env.BASE_URL,
     routes: [
             {
-                path: '/orders',
-                name: 'OrderManager',
-                component: OrderManager
+                path: '/fronts/orders',
+                name: 'FrontOrderManager',
+                component: FrontOrderManager
             },
             {
-                path: '/orders/:id',
-                name: 'OrderDetail',
-                component: OrderDetail
+                path: '/fronts/orders/:id',
+                name: 'FrontOrderDetail',
+                component: FrontOrderDetail
             },
             {
-                path: '/payments',
-                name: 'PaymentManager',
-                component: PaymentManager
+                path: '/fronts/payments',
+                name: 'FrontPaymentManager',
+                component: FrontPaymentManager
             },
             {
-                path: '/payments/:id',
-                name: 'PaymentDetail',
-                component: PaymentDetail
-            },
-
-            {
-                path: '/foodCookings',
-                name: 'FoodCookingManager',
-                component: FoodCookingManager
-            },
-            {
-                path: '/foodCookings/:id',
-                name: 'FoodCookingDetail',
-                component: FoodCookingDetail
+                path: '/fronts/payments/:id',
+                name: 'FrontPaymentDetail',
+                component: FrontPaymentDetail
             },
 
             {
-                path: '/deliveries',
-                name: 'DeliveryManager',
-                component: DeliveryManager
+                path: '/stores/foodCookings',
+                name: 'StoreFoodCookingManager',
+                component: StoreFoodCookingManager
             },
             {
-                path: '/deliveries/:id',
-                name: 'DeliveryDetail',
-                component: DeliveryDetail
+                path: '/stores/foodCookings/:id',
+                name: 'StoreFoodCookingDetail',
+                component: StoreFoodCookingDetail
+            },
+
+            {
+                path: '/riders/deliveries',
+                name: 'RiderDeliveryManager',
+                component: RiderDeliveryManager
+            },
+            {
+                path: '/riders/deliveries/:id',
+                name: 'RiderDeliveryDetail',
+                component: RiderDeliveryDetail
             },
 
 

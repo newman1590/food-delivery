@@ -2,9 +2,11 @@ package food.delivery.domain;
 
 import food.delivery.domain.*;
 import food.delivery.infra.AbstractEvent;
+import java.time.LocalDate;
 import java.util.*;
 import lombok.*;
 
+//<<< DDD / Domain Event
 @Data
 @ToString
 public class Paid extends AbstractEvent {
@@ -21,3 +23,4 @@ public class Paid extends AbstractEvent {
         super();
     }
 }
+//>>> DDD / Domain Event
