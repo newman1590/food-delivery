@@ -15,16 +15,16 @@
             FoodCooking
         </v-card-title >        
 
-        <v-card-text>
+        <v-card-text style="background-color: white;">
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
-            <String label="FoodId" v-model="value.foodId" :editMode="editMode" :inputUI="''"/>
-            <String label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
+            <String label="Foodid" v-model="value.foodid" :editMode="editMode" :inputUI="''"/>
+            <String label="Orderid" v-model="value.orderid" :editMode="editMode" :inputUI="''"/>
             <String label="Options" v-model="value.options" :editMode="editMode" :inputUI="''"/>
-            <String label="StoreId" v-model="value.storeId" :editMode="editMode" :inputUI="''"/>
-            <String label="CustomerId" v-model="value.customerId" :editMode="editMode" :inputUI="''"/>
+            <String label="Storeid" v-model="value.storeid" :editMode="editMode" :inputUI="''"/>
+            <String label="Customerid" v-model="value.customerid" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
-        <v-card-actions>
+        <v-card-actions style="background-color: white;">
             <v-spacer></v-spacer>
             <v-btn
                 color="primary"

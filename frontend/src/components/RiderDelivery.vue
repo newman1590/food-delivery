@@ -15,13 +15,13 @@
             Delivery
         </v-card-title >        
 
-        <v-card-text>
+        <v-card-text style="background-color: white;">
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
-            <String label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
+            <String label="Orderid" v-model="value.orderid" :editMode="editMode" :inputUI="''"/>
             <String label="Address" v-model="value.address" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
-        <v-card-actions>
+        <v-card-actions style="background-color: white;">
             <v-spacer></v-spacer>
             <v-btn
                 color="primary"
@@ -274,25 +274,6 @@
             },
             closeDelivery() {
                 this.deliveryDiagram = false;
-            },
-            async () {
-                try {
-                    if(!this.offline) {
-                        var temp = await axios.put(axios.fixUrl(this.value._links[''].href))
-                        for(var k in temp.data) {
-                            this.value[k]=temp.data[k];
-                        }
-                    }
-
-                    this.editMode = false;
-                } catch(e) {
-                    this.snackbar.status = true
-                    if(e.response && e.response.data.message) {
-                        this.snackbar.text = e.response.data.message
-                    } else {
-                        this.snackbar.text = e
-                    }
-                }
             },
         },
     }

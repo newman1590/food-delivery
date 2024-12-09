@@ -68,11 +68,11 @@
                 [
                     { text: "id", value: "id" },
                     { text: "status", value: "status" },
-                    { text: "foodId", value: "foodId" },
-                    { text: "orderId", value: "orderId" },
+                    { text: "foodid", value: "foodid" },
+                    { text: "orderid", value: "orderid" },
                     { text: "options", value: "options" },
-                    { text: "storeId", value: "storeId" },
-                    { text: "customerId", value: "customerId" },
+                    { text: "storeid", value: "storeid" },
+                    { text: "customerid", value: "customerid" },
                 ],
             foodCooking : [],
             newValue: {},
@@ -91,11 +91,11 @@
 
             this.newValue = {
                 'status': '',
-                'foodId': '',
-                'orderId': '',
+                'foodid': '',
+                'orderid': '',
                 'options': '',
-                'storeId': '',
-                'customerId': '',
+                'storeid': '',
+                'customerid': '',
             }
         },
         methods: {

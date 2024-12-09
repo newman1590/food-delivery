@@ -15,7 +15,7 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                FoodId :  {{item.foodId }}
+                                Foodid :  {{item.foodid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Options :  {{item.options }}
@@ -24,10 +24,10 @@
                                 Address :  {{item.address }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                CustomerId :  {{item.customerId }}
+                                Customerid :  {{item.customerid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                StoreId :  {{item.storeId }}
+                                Storeid :  {{item.storeid }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 

@@ -15,12 +15,12 @@
             Payment
         </v-card-title >        
 
-        <v-card-text>
-            <String label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
+        <v-card-text style="background-color: white;">
+            <String label="Orderis" v-model="value.orderis" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
-        <v-card-actions>
+        <v-card-actions style="background-color: white;">
             <v-spacer></v-spacer>
             <v-btn
                 color="primary"

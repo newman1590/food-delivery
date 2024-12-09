@@ -7,12 +7,7 @@
             style="padding:10px 0px 10px 0px; margin-bottom:40px;"
         >
             <v-row>
-                <v-list-item class="d-flex">
-                    <v-list-item-avatar
-                        size="70"
-                        class="border-color"
-                    >
-                    </v-list-item-avatar>
+                <v-list-item class="d-flex" style="background-color: white;">
                     <h1 class="align-self-center ml-3">Payment</h1>
                     <div class="secondary-text-color" style="margin-left:30px;"></div>
                 </v-list-item>
@@ -109,7 +104,7 @@
             me.values = temp.data._embedded.payments;
             
             me.newValue = {
-                'orderId': '',
+                'orderis': '',
                 'status': '',
             }
         },

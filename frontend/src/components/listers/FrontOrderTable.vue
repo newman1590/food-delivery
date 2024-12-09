@@ -67,11 +67,11 @@
             headers: 
                 [
                     { text: "id", value: "id" },
-                    { text: "foodId", value: "foodId" },
+                    { text: "foodid", value: "foodid" },
                     { text: "options", value: "options" },
                     { text: "address", value: "address" },
-                    { text: "customerId", value: "customerId" },
-                    { text: "storeId", value: "storeId" },
+                    { text: "customerid", value: "customerid" },
+                    { text: "storeid", value: "storeid" },
                 ],
             order : [],
             newValue: {},
@@ -89,11 +89,11 @@
             this.values = temp.data._embedded.orders;
 
             this.newValue = {
-                'foodId': '',
+                'foodid': '',
                 'options': '',
                 'address': '',
-                'customerId': '',
-                'storeId': '',
+                'customerid': '',
+                'storeid': '',
             }
         },
         methods: {

@@ -35,16 +35,12 @@ mvn spring-boot:run
 ## Test by API
 - front
 ```
- http :8088/orders id="id" foodId="foodId" options="options" address="address" customerId="customerId" storeId="storeId" 
- http :8088/payments id="id" orderId="orderId" status="status" 
 ```
 - store
 ```
- http :8088/foodCookings id="id" status="status" foodId="foodId" orderId="orderId" options="options" storeId="storeId" customerId="customerId" 
 ```
 - rider
 ```
- http :8088/deliveries id="id" status="status" orderId="orderId" address="address" 
 ```
 - customer
 ```

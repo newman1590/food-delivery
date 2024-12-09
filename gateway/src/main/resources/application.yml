@@ -12,19 +12,19 @@ spring:
         - id: front
           uri: http://localhost:8082
           predicates:
-            - Path=/orders/**, /payments/**, 
+            - Path=, 
         - id: store
           uri: http://localhost:8083
           predicates:
-            - Path=/foodCookings/**, 
+            - Path=, 
         - id: rider
           uri: http://localhost:8084
           predicates:
-            - Path=/deliveries/**, 
+            - Path=, 
         - id: customer
           uri: http://localhost:8085
           predicates:
-            - Path=, 
+            - Path=, /mypages/**
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -52,15 +52,15 @@ spring:
         - id: front
           uri: http://front:8080
           predicates:
-            - Path=/orders/**, /payments/**, 
+            - Path=, 
         - id: store
           uri: http://store:8080
           predicates:
-            - Path=/foodCookings/**, 
+            - Path=, 
         - id: rider
           uri: http://rider:8080
           predicates:
-            - Path=/deliveries/**, 
+            - Path=, 
         - id: customer
           uri: http://customer:8080
           predicates:

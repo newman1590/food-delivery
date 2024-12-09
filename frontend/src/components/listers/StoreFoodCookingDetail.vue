@@ -9,19 +9,19 @@
                 <String label="Status" v-model="item.status" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="FoodId" v-model="item.foodId" :editMode="editMode" @change="change" />
+                <String label="Foodid" v-model="item.foodid" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="OrderId" v-model="item.orderId" :editMode="editMode" @change="change" />
+                <String label="Orderid" v-model="item.orderid" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="Options" v-model="item.options" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="StoreId" v-model="item.storeId" :editMode="editMode" @change="change" />
+                <String label="Storeid" v-model="item.storeid" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="CustomerId" v-model="item.customerId" :editMode="editMode" @change="change" />
+                <String label="Customerid" v-model="item.customerid" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

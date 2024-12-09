@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//<<< Clean Arch / Inbound Adaptor
-
 @RestController
 // @RequestMapping(value="/payments")
 @Transactional
@@ -20,4 +18,3 @@ public class PaymentController {
     @Autowired
     PaymentRepository paymentRepository;
 }
-//>>> Clean Arch / Inbound Adaptor

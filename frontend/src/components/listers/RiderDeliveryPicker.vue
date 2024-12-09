@@ -18,7 +18,7 @@
                                 Status :  {{item.status }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                OrderId :  {{item.orderId }}
+                                Orderid :  {{item.orderid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Address :  {{item.address }}

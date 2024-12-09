@@ -15,7 +15,7 @@
                             <v-list-item-title>
                             </v-list-item-title>
                             <v-list-item-subtitle>
-                                OrderId :  {{item.orderId }}
+                                Orderis :  {{item.orderis }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Status :  {{item.status }}

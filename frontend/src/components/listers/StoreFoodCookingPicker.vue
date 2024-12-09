@@ -18,19 +18,19 @@
                                 Status :  {{item.status }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                FoodId :  {{item.foodId }}
+                                Foodid :  {{item.foodid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                OrderId :  {{item.orderId }}
+                                Orderid :  {{item.orderid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 Options :  {{item.options }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                StoreId :  {{item.storeId }}
+                                Storeid :  {{item.storeid }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                CustomerId :  {{item.customerId }}
+                                Customerid :  {{item.customerid }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 
